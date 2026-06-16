@@ -1,0 +1,76 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition:
+    background-color var(--dur) var(--ease-out-quart),
+    color var(--dur) var(--ease-out-quart),
+    border-color var(--dur) var(--ease-out-quart),
+    transform var(--dur-fast) var(--ease-out-quart),
+    box-shadow var(--dur) var(--ease-out-quart);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+/* Sizes */
+.md {
+  padding: 0.72rem 1.15rem;
+  font-size: 1rem;
+}
+
+.lg {
+  padding: 0.95rem 1.6rem;
+  font-size: 1.0625rem;
+}
+
+/* Primary — the brand action */
+.primary {
+  background: var(--brand-600);
+  color: var(--on-brand);
+  box-shadow: var(--shadow-sm);
+}
+
+.primary:hover {
+  background: var(--brand-700);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary — quiet, bordered */
+.secondary {
+  background: var(--bg);
+  color: var(--brand-700);
+  border: 1px solid var(--border-strong);
+}
+
+.secondary:hover {
+  border-color: var(--brand-300);
+  background: var(--brand-50);
+}
+
+/* Ghost — minimal, text-like */
+.ghost {
+  background: transparent;
+  color: var(--brand-700);
+  padding-inline: 0.5rem;
+}
+
+.ghost:hover {
+  color: var(--brand-800);
+}
+
+/* On a brand/dark band */
+.on-brand {
+  background: var(--bg);
+  color: var(--brand-700);
+}
+
+.on-brand:hover {
+  background: var(--brand-50);
+}

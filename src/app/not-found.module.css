@@ -1,0 +1,34 @@
+.wrap {
+  text-align: center;
+  padding-block: clamp(5rem, 12vw, 9rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: 800;
+  color: var(--brand-200);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.title {
+  margin-top: 0.75rem;
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: var(--fs-lead);
+  color: var(--body);
+  max-width: 42ch;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+}

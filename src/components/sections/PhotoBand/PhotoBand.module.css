@@ -1,0 +1,64 @@
+.band {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: clamp(26rem, 46vw, 34rem);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center 35%;
+  z-index: -2;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      100deg,
+      oklch(0.24 0.06 264 / 0.94) 0%,
+      oklch(0.24 0.06 264 / 0.82) 38%,
+      oklch(0.31 0.082 264 / 0.5) 70%,
+      oklch(0.31 0.082 264 / 0.25) 100%
+    );
+}
+
+.inner {
+  width: 100%;
+}
+
+/* On narrow screens text runs full-width, so deepen the scrim for contrast. */
+@media (max-width: 720px) {
+  .scrim {
+    background: linear-gradient(
+      170deg,
+      oklch(0.24 0.06 264 / 0.92) 0%,
+      oklch(0.24 0.06 264 / 0.78) 60%,
+      oklch(0.31 0.082 264 / 0.7) 100%
+    );
+  }
+}
+
+.content {
+  max-width: 38rem;
+  padding-block: clamp(3rem, 6vw, 4rem);
+  color: var(--on-brand-soft);
+}
+
+.heading {
+  color: var(--on-brand);
+  font-size: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+  text-wrap: balance;
+}
+
+.text {
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  font-size: var(--fs-lead);
+  color: var(--brand-100);
+  max-width: 34rem;
+}

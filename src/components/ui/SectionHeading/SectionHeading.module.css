@@ -1,0 +1,15 @@
+.wrap {
+  max-width: 42rem;
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.intro {
+  margin-top: 1rem;
+  font-size: var(--fs-lead);
+  color: var(--body);
+  text-wrap: pretty;
+}

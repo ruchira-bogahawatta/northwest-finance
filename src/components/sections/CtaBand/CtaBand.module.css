@@ -1,0 +1,45 @@
+.band {
+  background:
+    radial-gradient(80% 140% at 100% 0%, var(--brand-600) 0%, transparent 60%),
+    linear-gradient(120deg, var(--brand-800), var(--brand-700));
+  color: var(--on-brand-soft);
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.75rem 2.5rem;
+}
+
+.heading {
+  color: var(--on-brand);
+  font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+}
+
+.text {
+  margin-top: 0.85rem;
+  font-size: var(--fs-lead);
+  color: var(--brand-100);
+  max-width: 40ch;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.phone {
+  font-weight: 600;
+  color: var(--brand-100);
+  white-space: nowrap;
+  transition: color var(--dur) var(--ease-out-quart);
+}
+
+.phone:hover {
+  color: var(--on-brand);
+}

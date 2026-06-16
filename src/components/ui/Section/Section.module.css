@@ -1,0 +1,30 @@
+.section {
+  padding-block: var(--section-y);
+}
+
+.tight {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.loose {
+  padding-block: clamp(5rem, 10vw, 9rem);
+}
+
+.default {
+  background: var(--bg);
+}
+
+.surface {
+  background: var(--surface);
+}
+
+.brand {
+  background: var(--brand-700);
+  color: var(--on-brand-soft);
+}
+
+.brand :global(h1),
+.brand :global(h2),
+.brand :global(h3) {
+  color: var(--on-brand);
+}

@@ -1,0 +1,32 @@
+.factorsTitle {
+  max-width: 24ch;
+}
+
+.factorsIntro {
+  margin-top: 1rem;
+  font-size: var(--fs-lead);
+  color: var(--body);
+  max-width: 52ch;
+}
+
+.factors {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.factor {
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--brand-100);
+}
+
+.factorTitle {
+  font-size: 1.0625rem;
+}
+
+.factorBody {
+  margin-top: 0.5rem;
+  color: var(--body);
+  font-size: 0.9875rem;
+}

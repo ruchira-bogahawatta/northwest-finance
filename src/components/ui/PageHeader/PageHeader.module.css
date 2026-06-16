@@ -1,0 +1,23 @@
+.header {
+  background:
+    radial-gradient(110% 90% at 90% -20%, var(--brand-50) 0%, transparent 55%),
+    var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.inner {
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.25rem);
+}
+
+.intro {
+  margin: 1.1rem auto 0;
+  font-size: var(--fs-lead);
+  color: var(--body);
+  max-width: 46ch;
+  text-wrap: pretty;
+}
